@@ -1,0 +1,13 @@
+Host bastion BASTIONIP
+	HostName BASTIONIP
+	StrictHostKeyChecking no
+	User ubuntu
+	IdentityFile ~/.ssh/id_rsa_terraform_testapp.pem
+	ForwardAgent yes
+
+Host BACKENDIPS
+	StrictHostKeyChecking no
+	User ubuntu
+	ProxyJump bastion
+	IdentityFile ~/.ssh/id_rsa_terraform_testapp.pem
+
