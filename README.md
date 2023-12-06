@@ -1,4 +1,4 @@
-# terraform-localstack-test
+# terraform-testapp
 
 Terraform assignment.
 
